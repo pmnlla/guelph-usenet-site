@@ -1,0 +1,30 @@
+---
+import '../styles/global.css'
+import pomteal from '../../public/pomhf_teal.png'
+
+const greetings = [
+  "haiiiiiiii!",
+  "Hallo!",
+  "Hi!",
+  "Welcome in!",
+  "*bunbun noises*",
+  "Aloe!",
+  "Hola!",
+  "Salut!",
+  "*used tricorn*"
+];
+
+const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+
+---
+
+<div class="flex flex-row items-center gap-2 w-320">
+    <div class="m-12">
+        <img class="" src={pomteal.src}/>
+    </div>
+    <div>
+        <h1 class="text-scrappy-green font-garamond text-black text-9xl">{randomGreeting}</h1>
+        <p class="text-scrappy-green font-sun-serif text-black text-3xl">I'm Itai, a 1st year engineering student at the University of Guelph, who does... a little bit of everything, really. And you caught me at the Rocketry Club usenet! and where else?</p>
+        <p class="text-scrappy-green font-sun-serif text-black text-xl">caught me on campus? ask for a sticker! i don't bite!</p>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+	--color-scrappy-green: #337D78;
+}
+body {
+	background-color: #fef9f0;
+}
+
+.font-garamond {
+	font-family: var(--font-garamond-big), serif;
+}
+.font-sun-serif {
+	font-family: var(--font-sun-serif), serif;
+}
+.font-sun-capital {
+	font-family: var(--font-sun-caps), serif;
+}

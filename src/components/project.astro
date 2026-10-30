@@ -1,0 +1,26 @@
+---
+import '../styles/global.css'
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  image?: ImageMetadata | null;
+  title: string;
+  description: string;
+}
+
+const { image, title, description } = Astro.props;
+
+---
+
+<div class="flex flex-row items-center gap-2 w-256">
+    {image && (
+        <div class="m-12">
+            <img class="outline-solid outline-scrappy-green outline-2 outline-offset-4" src={image.src}/>
+        </div>
+    )}
+    <div>
+         <p class="text-scrappy-green font-sun-capital text-black text-3xl" >{title}</p>
+         <p class="text-scrappy-green font-sun-serif text-black text-xl" >{description}</p>
+    </div>
+</div>

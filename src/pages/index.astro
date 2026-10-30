@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hello from '../components/hello.astro';
+import Project from '../components/project.astro';
+import hackthenorth from '../../public/hackthenorth.png';
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+	<div class="flex flex-center align-center justify-center mt-32">
+		<Hello />
+	</div>
+	<br>
+	<div class="flex flex-center align-center justify-center mt-24">
+		<Project title='I am the Lorex. I speak for the cams!' description='Alterna started out as a work project, but quickly turned into a learning experience for me. It is just a firmware patching toolchain, and a set of patches that tack on package management, ssh, ssl, and whatever creature comforts you can compile in, onto a set of old Lorex DVRs. It slots in as a bog-standard system update, and runs at Magna Autosystems!'></Project>
+	</div>
+	<div class="flex flex-center align-center justify-center mt-24">
+		<Project title='Ever wanted to talk to space?' description='For a little while, I spearheaded the conception of the Guelph Space Research Protocol, for UoG Rocketry MANTLE. While the project was taken over later, I wrote the first iteration of the protocol and encoded the first heartbeat! I still do rocketry shit, and will update this site with it later on!'></Project>
+	</div>
+	<div class="flex flex-center align-center justify-center mt-24">
+		<Project image={hackthenorth} title='And top it with a sprinkle of silicon.' description='Hack the North 2026 was one of my most memorable events that I have been to, and I actually gor rejected first. Naturally, I signed up to volunteer, and then ported DOOM to the badge, helped to fix and repair them, and ended up leading the 3D printing department after hours. And if you remember me, Mateo, please dont send me 20 build plates T-T'></Project>
+	</div>
+</Layout>
